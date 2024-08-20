@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-<img src="https://github.com/qiuk2/AAR/assets/pipeline.png" width=95%>
+<img src="assets/pipeline.png" width=95%>
 <p>
 
 <be>
