@@ -19,21 +19,20 @@
 <be>
   
 # Updates 
-- (2024.08.22) Release training code and checkpoint for SAT, AAR will be available soon.
-- (2024.08.21) Add inference code, will release checkpoint and training code soon.
-- (2024.08.20) Repo created. Code and checkpoints will be released in this week.
+- (2024.08.22) Add inference code and tokenizer checkpoint, will release AR model and training code soon.
+- (2024.08.20) Repo created. Code and checkpoints will be released this week.
 
 
-# AAR ckpts
-We provide AAR model trained with AudioSet for you, which are on  <a href='https://huggingface.co/qiuk6/AAR'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Huggingface-AAR-yellow'></a> or can be downloaded from the following links:
-|   model    | HF weights 🤗  
-|:----------:|:------------------------------------------------------------------------------------|
-|    SAT     |[SAT.pth](https://huggingface.co/qiuk6/AAR/resolve/main/SAT_bs_1536_d1024_lat64.pth) |
+# Scale-level audio tokenizer (SAT)
+We provide Audioset pre-trained SAT checkpoint as follows:
+|   model    | # Scale | # Tokens | FAD | HF weights 🤗  |
+|:----------:|:----|:----|:----|:----|
+|    SAT     |16|455|1.09|[SAT.pth](https://huggingface.co/qiuk6/AAR/resolve/main/SAT_bs_1536_d1024_lat64.pth) |
 
 
 # Dataset
 
-We download our Audioset from website https://research.google.com/audioset/ and collect it as 
+We download our Audioset from the website https://research.google.com/audioset/ and collect it as 
 
 ```
 AudioSet
