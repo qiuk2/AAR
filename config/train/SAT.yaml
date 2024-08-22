@@ -1,0 +1,27 @@
+train_dir: /voyager/AudioSet/audioset_unbalanced_train_mp3
+train_csv: /voyager/AudioSet/unbalanced_train_segments.csv
+tensor_cut: 24000
+batch_size: 8
+num_workers: 8
+resume: latest
+
+# training
+num_epochs: 100
+optimizer: adam
+learning_rate: 3e-4
+lr_scheduler: cosine
+warmup_epoch: 2
+save_interval: epoch
+mixed_precision: no
+
+#vq model
+model_norm: weight_norm
+multi_scale: [1, 2, 4, 6, 9, 12, 16, 20, 25, 31, 37, 43, 50, 58, 66, 75]
+phi_kernel: [9, 9, 9, 9, 9, 9]
+dimension: 1024
+latent_dim: 64
+
+# discriminator
+disc_win_lengths: [1024, 2048, 512, 256, 128]
+disc_hop_lengths: [256, 512, 128, 64, 32]
+disc_n_ffts: [1024, 2048, 512, 256, 128]

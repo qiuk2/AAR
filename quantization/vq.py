@@ -14,7 +14,7 @@ from typing import List, Optional, Sequence, Tuple, Union
 import torch
 from torch import nn
 
-from .core_vq import ResidualVectorQuantization, Multiscale_ResidualVectorQuantization
+from .core_vq import Multiscale_ResidualVectorQuantization
 
 
 class ResidualVectorQuantizer(nn.Module):

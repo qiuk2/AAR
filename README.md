@@ -39,10 +39,16 @@ AudioSet
 - Install all packages via ```pip3 install -r requirements.txt```.
 
 
+# Training
+
+```
+python3 train_SAT_mpi.py --config config/train/SAT.yaml --train_dir /path/to/audioset_unbalanced_train_mp3 --train_csv /path/to/csv --batch_size $bs --gpus $gpus --output_dir /path/to/save/ckpt --use_prefetcher True --resume latest
+```
+
 # Inference
 
 ```
-python3 inference_SAT.py --config config/SAT_config.yaml --resume /path/to/ckpt.pth --test_dir /path/to/audioset_eval_raw_mp3 --batch_size $bs
+python3 inference_SAT.py --config config/inference/SAT.yaml --resume /path/to/ckpt.pth --test_dir /path/to/audioset_eval_raw_mp3 --batch_size $bs
 ```
 
 
