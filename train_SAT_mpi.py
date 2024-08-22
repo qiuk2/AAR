@@ -276,7 +276,6 @@ def process(args):
     print(f"Running DDP on rank {args.rank}.")
     device = torch.device(f"cuda:{os.environ['OMPI_COMM_WORLD_LOCAL_RANK']}")
     # seed_everything(args.seed)
-    args.output_dir = os.path.join('/mnt/chenhao/llm_var/', args.output_dir)
     os.makedirs(args.output_dir, exist_ok=True)
 
     if args.save_interval is not None and args.save_interval.isdigit():
@@ -354,7 +353,7 @@ def process(args):
         os.environ["WANDB_CONFIG_DIR"] = './wandb'
         os.environ["WANDB_CACHE_DIR"] = './wandb'
         os.environ["WANDB_DIR"] = './wandb'
-        wandb.login(key='eed03e9548474fc9bccb341783e5704c46647181')
+        wandb.login()
         if args.debug:
             wandb.init(project="Debug")
         else:

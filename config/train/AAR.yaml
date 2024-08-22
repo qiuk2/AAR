@@ -1,0 +1,23 @@
+train_dir: /voyager/AudioSet/audioset_unbalanced_train_mp3
+train_csv: /voyager/AudioSet/unbalanced_train_segments.csv
+clap_process: True
+tensor_cut: 24000
+batch_size: 8
+num_workers: 8
+resume: latest
+
+# training
+num_epochs: 100
+save_interval: epoch
+mixed_precision: bf16
+
+#vq model
+model_norm: weight_norm
+multi_scale: [1, 2, 4, 6, 9, 12, 16, 20, 25, 31, 37, 43, 50, 58, 66, 75]
+phi_kernel: [9, 9, 9, 9, 9, 9]
+n_residual_layers: 1
+lstm: 2
+dimension: 128
+latent_dim: 128
+
+
