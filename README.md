@@ -23,11 +23,9 @@
 - (2024.08.20) Repo created. Code and checkpoints will be released this week.
 
 
-# Scale-level audio tokenizer (SAT)
-We provide Audioset pre-trained SAT checkpoint as follows:
-|   model    | # Scale | # Tokens | FAD | HF weights 🤗  |
-|:----------:|:----|:----|:----|:----|
-|    SAT     |16|455|1.09|[SAT.pth](https://huggingface.co/qiuk6/AAR/resolve/main/SAT_bs_1536_d1024_lat64.pth) |
+# Installation
+
+- Install all packages via ```pip3 install -r requirements.txt```.
 
 
 # Dataset
@@ -41,22 +39,28 @@ AudioSet
 └── audioset_eval_raw_mp3
 ```
 
-# Installation
+---
 
-- Install all packages via ```pip3 install -r requirements.txt```.
+# Scale-level audio tokenizer (SAT)
 
-
-# Training
+## Training
 
 ```
 python3 train_SAT_mpi.py --config config/train/SAT.yaml --train_dir /path/to/audioset_unbalanced_train_mp3 --train_csv /path/to/csv --batch_size $bs --gpus $gpus --output_dir /path/to/save/ckpt --use_prefetcher True --resume latest
 ```
 
-# Inference
+## Inference
 
 ```
 python3 inference_SAT.py --config config/inference/SAT.yaml --resume /path/to/ckpt.pth --test_dir /path/to/audioset_eval_raw_mp3 --batch_size $bs
 ```
+
+## Pre-trained model
+We provide Audioset pre-trained SAT checkpoint as follows:
+|   model    | # Scale | # Tokens | FAD | HF weights 🤗  |
+|:----------:|:----|:----|:----|:----|
+|    SAT     |16|455|1.09|[SAT.pth](https://huggingface.co/qiuk6/AAR/resolve/main/SAT_bs_1536_d1024_lat64.pth) |
+
 
 
 # Citation
