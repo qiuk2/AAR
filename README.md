@@ -25,7 +25,7 @@
 
 
 AAR ckpts
-We provide AAR model trained with AudioSet for you, which are on  <a href='https://huggingface.co/qiuk6/AAR'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Huggingface-FoundationVision/var-yellow'></a> or can be downloaded from the following links:
+We provide AAR model trained with AudioSet for you, which are on  <a href='https://huggingface.co/qiuk6/AAR'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Huggingface-AAR-yellow'></a> or can be downloaded from the following links:
 |   model    | HF weights 🤗  
 |:----------:|:------------------------------------------------------------------------------------|
 |    SAT     |[SAT.pth](https://huggingface.co/qiuk6/AAR/resolve/main/SAT_bs_1536_d1024_lat64.pth) |
