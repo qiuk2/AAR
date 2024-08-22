@@ -24,7 +24,7 @@
 - (2024.08.20) Repo created. Code and checkpoints will be released in this week.
 
 
-AAR ckpts
+# AAR ckpts
 We provide AAR model trained with AudioSet for you, which are on  <a href='https://huggingface.co/qiuk6/AAR'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Huggingface-AAR-yellow'></a> or can be downloaded from the following links:
 |   model    | HF weights 🤗  
 |:----------:|:------------------------------------------------------------------------------------|
