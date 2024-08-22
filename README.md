@@ -19,7 +19,7 @@
 <be>
   
 # Updates 
-- (2024.08.22) Add SAT inference and training code. Codes about AAR will be available soon.
+- (2024.08.22) Add SAT inference/training code. Codes about AAR will be available soon.
 - (2024.08.20) Repo created. Code and checkpoints will be released this week.
 
 
@@ -62,7 +62,16 @@ We provide Audioset pre-trained SAT checkpoint as follows:
 |    SAT     |    16   |   455    |   64     | 1.09|[SAT.pth](https://huggingface.co/qiuk6/AAR/resolve/main/SAT_bs_1536_d1024_lat64.pth) |
 |    SAT     |   16    |   455    |  128     | 1.40|(SAT.pth)()     |
 
+
 # Acoustic AutoRegressive Modeling (AAR)
+
+## Training
+
+```
+python3 train_AAR_mpi.py --config config/train/AAR.yaml --train_dir /path/to/audioset_unbalanced_train_mp3 --train_csv /path/to/csv --batch_size $bs --gpus $gpus --output_dir /path/to/save/ckpt --use_prefetcher True --resume latest --vqvae_pretrained_path /path/to/vae/ckpt --latent_dim $latent --dimension $dim 
+```
+
+## Inference
 
 
 
