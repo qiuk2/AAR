@@ -62,6 +62,9 @@ We provide Audioset pre-trained SAT checkpoint as follows:
 |    SAT     |    16   |   455    |   64     | 1.09|[SAT.pth](https://huggingface.co/qiuk6/AAR/resolve/main/SAT_bs_1536_d1024_lat64.pth) |
 |    SAT     |   16    |   455    |  128     | 1.40|(SAT.pth)()     |
 
+# Acoustic AutoRegressive Modeling (AAR)
+
+
 
 
 # Citation

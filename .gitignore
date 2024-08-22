@@ -4,3 +4,6 @@ wandb
 __pycache__/
 *.py[cod]
 *$py.class
+
+
+release_ckpt.py
