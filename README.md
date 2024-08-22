@@ -31,7 +31,7 @@ We download our Audioset from website https://research.google.com/audioset/ and 
 AudioSet
 ├── audioset_unbalanced_train_mp3
 ├── unbalanced_train_segments.csv
-└── audioset_balanced_raw_mp3
+└── audioset_eval_raw_mp3
 ```
 
 # Installation
