@@ -20,7 +20,30 @@
   
 # Updates 
 
+- (2024.08.21) Add inference code, will release checkpoint and training code soon.
 - (2024.08.20) Repo created. Code and checkpoints will be released in this week.
+
+# Dataset
+
+We download our Audioset from website https://research.google.com/audioset/ and collect it as 
+
+```
+AudioSet
+├── audioset_unbalanced_train_mp3
+├── unbalanced_train_segments.csv
+└── audioset_balanced_raw_mp3
+```
+
+# Installation
+
+- Install all packages via ```pip3 install -r requirements.txt```.
+
+
+# Inference
+
+```
+python3 inference_SAT.py --config config/SAT_config.yaml --resume /path/to/ckpt.pth --test_dir /path/to/audioset_eval_raw_mp3 --batch_size $bs
+```
 
 
 # Citation

@@ -1,0 +1,15 @@
+# data
+tensor_cut: 24000
+batch_size: 8
+num_workers: 8
+
+# SAT
+multi_scale: [1, 2, 4, 6, 9, 12, 16, 20, 25, 31, 37, 43, 50, 58, 66, 75]
+phi_kernel: [9, 9, 9, 9, 9, 9]
+dimension: 1024
+latent_dim: 64
+
+# import numpy as np
+# # Generate 16 equally spaced indices
+# quadratic_space = np.linspace(1, np.sqrt(75), 16)**2
+# quadratic_integers = (quadratic_space.astype(int))
