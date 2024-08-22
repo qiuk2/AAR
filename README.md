@@ -19,7 +19,7 @@
 <be>
   
 # Updates 
-- (2024.08.22) Add inference code and tokenizer checkpoint, will release AR model and training code soon.
+- (2024.08.22) Add SAT inference and training code. Codes about AAR will be available soon.
 - (2024.08.20) Repo created. Code and checkpoints will be released this week.
 
 
