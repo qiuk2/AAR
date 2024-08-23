@@ -8,7 +8,7 @@ import torch.nn as nn
 import dist
 from modules.basic_var import AdaLNSABlock, SABlock
 from modules.helpers import sample_with_top_k_top_p_, gumbel_softmax_with_rng
-from .audio_vae import EncodecModel
+from .SAT import SAT
 from quantization import ResidualVectorQuantizer
 
 
@@ -20,7 +20,7 @@ class SharedAdaLin(nn.Linear):
 
 class AAR(nn.Module):
     def __init__(
-        self, vae_local: EncodecModel,
+        self, vae_local: SAT,
         input_dim, norm_eps=1e-6, aln=1, aln_gamma_init=1e-3, shared_aln=False, cond_drop_rate=0.1,
         depth=16, embed_dim=1024, num_heads=16, mlp_ratio=4., drop_rate=0., attn_drop_rate=0., drop_path_rate=0.,
         layer_scale=-1., tau=4, cos_attn=False,

@@ -94,8 +94,11 @@ class AudioSet(Dataset):
         
         if self.processor == None:
             return torch.from_numpy(waveform)
-        
-        resample_wave, _ = librosa.load(os.path.join(self.train_dir, f'Y{self.audio_files.iloc[idx, 0]}.mp3'),sr=48000, mono=self.channels)
+        if self.mode == 'train':
+            resample_wave, _ = librosa.load(os.path.join(self.train_dir, f'Y{self.audio_files.iloc[idx, 0]}.mp3'),sr=48000, mono=self.channels)
+        else:
+            resample_wave, _ = librosa.load(self.audio_files[idx], sr=48000, mono=self.channels)
+
         condition = self.processor(audios=resample_wave, return_tensors="pt", sampling_rate=48000)
         
         return torch.from_numpy(waveform), condition
