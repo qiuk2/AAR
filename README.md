@@ -42,6 +42,7 @@ AudioSet
 ---
 
 # Scale-level audio tokenizer (SAT)
+We are currently training large-scale SAT for music, audio, and speech. We expect the checkpoint will be ready and released in Sept.
 
 ## Training
 
