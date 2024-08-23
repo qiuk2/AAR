@@ -81,7 +81,7 @@ python3 inference_AAR.py --config config/inference/AAR.yaml --aar_pretrained_pat
 We provide Audioset pre-trained AAR checkpoint as follows:
 |   model    | # Scale | # Tokens |latent_dim| FAD | HF weights 🤗  |
 |:----------:|:--------|:---------|:---------|:----|:-------------- |
-|    SAT     |   16    |   455    |  128     | 1.40|(SAT.pth)(https://huggingface.co/qiuk6/AAR/resolve/main/SAT_d128_lat128.pth)     |
+|    SAT     |   16    |   455    |  128     | 1.40|[SAT.pth](https://huggingface.co/qiuk6/AAR/resolve/main/SAT_d128_lat128.pth)     |
 |    AAR     |    16   |   455    |   128     | 6.01|[AAR.pth](https://huggingface.co/qiuk6/AAR/resolve/main/AAR_d16_bs2048.pth) |
 
 # Citation
