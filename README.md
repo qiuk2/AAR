@@ -3,7 +3,7 @@
 
 <div align="center">
 
-[![project page](https://img.shields.io/badge/AAR%20project%20page-lightblue)]()&nbsp;
+[![project page](https://img.shields.io/badge/AAR%20project%20page-lightblue)](https://qiuk2.github.io/demo)&nbsp;
 [![arXiv](https://img.shields.io/badge/arXiv%20paper-2404.02905-b31b1b.svg)](https://arxiv.org/pdf/2408.09027)&nbsp;
 [![huggingface weights](https://img.shields.io/badge/%F0%9F%A4%97%20Weights-yellow)](https://huggingface.co/qiuk6/AAR)&nbsp;
 
@@ -19,6 +19,7 @@
 <be>
   
 # Updates 
+- (2024.08.24) Demo Released, tokenizer for other datasets will be available in two weeks.
 - (2024.08.22) Add SAT and AAR code, demo will be released soon.
 - (2024.08.20) Repo created. Code and checkpoints will be released this week.
 
